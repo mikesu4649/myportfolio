@@ -144,12 +144,12 @@ body{
    padding-bottom: 30px;
 }
 /* ----------------- 以下responsive ------------------- */
-@media(max-width:768px){
+@media screen and (max-width:768px){
 /* --- base ---    */
-.body{
-   font-size: 1.3rem;
-   background: #151515 url('../images/bg.jpg') no-repeat fixed left bottom;
-}
+   .body{
+      font-size: 1.3rem;
+      background: #151515 url('../images/bg.jpg') no-repeat fixed left bottom;
+   }
 /* --- parts --- */
    .heading{
       font-size: 2.5rem;
@@ -178,6 +178,7 @@ body{
       display: block;
       width: 80%;
       padding: 15px;
+      margin-bottom: 20px;
       border-radius: 4px;
       background-color: #888;
       color: #fff;
@@ -185,7 +186,13 @@ body{
       letter-spacing: 1px;
       font-size: 2.0rem;
       opacity: 0.9
-   }   
+   }
+   .button:hover{
+      opacity: 0.8;
+   }
+   .button-right{
+      background-color:#f1b400 ;
+   }
 /* --- about ---    */
    .about-text{
       line-height: 1.8;
